@@ -10,7 +10,11 @@ namespace convert_fiatToCrypto_viceVersa_api
     {
         static void Main(string[] args)
         {
+            CurrencyConversion currencyConversion = new CurrencyConversion();
+            var result=currencyConversion.CallApi();
+            Console.WriteLine(result);
             Console.ReadKey();
+
         }
     }
 }
