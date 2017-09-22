@@ -10,6 +10,7 @@ namespace convert_fiatToCrypto_viceVersa_api
     {
         static void Main(string[] args)
         {
+            Console.ReadKey();
         }
     }
 }
