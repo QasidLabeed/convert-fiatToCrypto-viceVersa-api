@@ -13,14 +13,15 @@ namespace Restful_API_for_conversion.Controllers
         public HttpResponseMessage GET()
         {
             HttpResponseMessage response = new HttpResponseMessage();
-            response.Content = new StringContent("The api format is\n localhost:8548/api/converter?from=value&to=value&amount=value", Encoding.Unicode, "application/json");
+            response.Content = new StringContent("The api format is\n localhost:58705/api/converter?from=value&to=value&amount=value", Encoding.Unicode, "application/json");
             return response;
 
         }
+
         public HttpResponseMessage GET(string from,string to,int amount)
         {
             CurrencyConversion currencyConversion = new CurrencyConversion();
-            string result =currencyConversion.CallApi(from,to,amount);
+            string result =currencyConversion.CurConv(from,to,amount);
 
             HttpResponseMessage response = new HttpResponseMessage();
             response.Content = new StringContent(result, Encoding.Unicode, "application/json");

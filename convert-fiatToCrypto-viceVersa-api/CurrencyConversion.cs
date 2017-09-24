@@ -9,7 +9,7 @@ namespace convert_fiatToCrypto_viceVersa_api
     public class CurrencyConversion
     {
         // No Parameter function
-        public string CallApi()
+        public string CurConv()
         {
             
             //string[] Param = { from, to };
@@ -26,11 +26,9 @@ namespace convert_fiatToCrypto_viceVersa_api
         }
 
         //Overloaded function
-        public string CallApi(string from, string to, int amount)
+        public string CurConv(string from, string to, int amount)
         {
            
-
-
             string[] Param = { from,to };
             string conv = "https://min-api.cryptocompare.com/data/pricehistorical?fsym=" + Param[0] + "&tsyms=" + Param[1];
 
