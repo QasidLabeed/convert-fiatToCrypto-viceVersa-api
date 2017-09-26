@@ -12,7 +12,7 @@ Default packages were used for development
 No additional package downloaded
 
 ## How to use
-The api can be call using the url "localhost:58705/api/converter?from=value&to=value&amount=value"
+The api can be call using the url [https://testing12.gear.host/api/converter?from=value&to=value&amount=value](https://testing12.gear.host/api/converter?from=value&to=value&amount=value)"
 in the default browser
 
 ### Parameters
